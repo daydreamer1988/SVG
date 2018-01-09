@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/triangle"
+    >
+    <!--target：针对name的目标做动画 name在上面svg文件中定义-->
+    <!--透明度动画作用在group及path上不起作用-->
+    <target
+        android:animation="@animator/alpha"
+        android:name="triangle" />
+    <target
+        android:animation="@animator/scalex"
+        android:name="group" />
+    <target
+        android:animation="@animator/scaley"
+        android:name="group" />
+    <target
+        android:animation="@animator/rotate"
+        android:name="group" />
+    <target
+        android:animation="@animator/translate"
+        android:name="group" />
+</animated-vector>

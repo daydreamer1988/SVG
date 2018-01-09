@@ -1,0 +1,61 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportHeight="100"
+    android:viewportWidth="100">
+
+
+    <group
+        android:name="sun"
+        android:translateX="-10"
+        android:pivotX="60"
+        android:pivotY="50"
+        android:rotation="-90">
+
+        <path
+            android:name="path_sun"
+            android:strokeWidth="3"
+            android:strokeLineCap="round"
+            android:strokeColor="#70f9403a"
+            android:fillColor="#f9403a"
+            android:pathData="
+            M 50,50
+            a 10,10 0 1,0 20,0
+            a 10,10 0 1,0 -20,0">
+
+            <group
+                android:name="earth"
+                android:pivotX="75"
+                android:pivotY="50"
+                android:rotation="0">
+
+                <path
+                    android:name="path_earth"
+                    android:strokeWidth="2"
+                    android:strokeColor="#7077c349"
+                    android:fillColor="@android:color/holo_green_dark"
+                    android:pathData="
+                M 70,50
+                a 5,5 0 1,0 10,0
+                a 5,5 0 1,0 -10,0">
+
+                    <group>
+
+                        <path
+                            android:fillColor="#aaaaaa"
+                            android:strokeWidth="1"
+                            android:strokeColor="#70aaaaaa"
+
+                            android:pathData="
+                    M 90,50
+                    m -5,0
+                    a 2,2 0 1,0 8,0
+                    a 2,2 0 1,0 -8,0">
+
+                        </path>
+                    </group>
+                </path>
+            </group>
+        </path>
+    </group>
+</vector>

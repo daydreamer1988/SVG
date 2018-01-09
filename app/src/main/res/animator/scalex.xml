@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:valueFrom="0.5f"
+    android:valueTo="1.2f"
+    android:duration="1000"
+    android:propertyName="scaleX"
+    android:valueType="floatType">
+
+
+</objectAnimator>
